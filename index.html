@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الشخصيات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>اختر شخصيتك</h1>
+        <div id="characters">
+            <div class="character" onclick="selectCharacter('محمد')">
+                <img src="https://www.alnilin.com/wp-content/uploads/2016/06/%D8%B3%D8%A8%D8%A7%D9%8A%D8%AF%D8%B1-%D9%85%D8%A7%D9%86-e1686986653823.jpg" alt="محمد">
+                <p>محمد</p>
+            </div>
+            <div class="character" onclick="selectCharacter('براءة')">
+                <img src="https://pm1.aminoapps.com/6502/0a640944fa9e3787956eb20e3aad94cd621d24f7_00.jpg" alt="براءة">
+                <p>براءة</p>
+            </div>
+        </div>
+        <div id="levelSelection" class="hidden">
+            <h2 id="selectedCharacterTitle"></h2>
+            <button id="startLevelBtn" onclick="startLevel()">البدء بالمستوى الأول</button>
+        </div>
+        <div id="gameArea" class="hidden">
+            <h2 id="levelTitle"></h2>
+            <div id="gameContent"></div>
+            <button onclick="completeLevel()">إكمال المستوى</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
